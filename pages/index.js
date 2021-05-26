@@ -1,82 +1,68 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
-  )
+	return (
+		<div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+			<img class="object-left" src="/title-hi.png" alt="" width="384" height="512" />
+			{/* <Image src="/title-hi.png" alt="Hi, I'm Jack" /> */}
+			{/* <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+				Hey, I’m Lee Robinson
+			</h1> */}
+			<figure class="md:flex">
+				<img
+					class="order-last w-40 h-40 flex rounded-full mx-auto"
+					src="/jack.jpg"
+					alt=""
+					width="512"
+					height="512"
+				/>
+				<div class="md:text-left">
+					<h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
+						I'm a <b>software engineer at Amazon</b>. I recently graduated from <b>UC Berkeley</b>, where I
+						studied electrical engineering and <b>computer science</b>.
+						<br />
+						<br />
+						Some other things about me:
+						<br />
+						–&nbsp; I like being outdoors: National Parks, spikeball, hammocking
+						<br />
+						–&nbsp; I sometimes make {' '}
+						<Link href="https://www.youtube.com/channel/UCja7ZkxohSdeqgilaIw36nw">
+							<a>videos</a>
+						</Link>
+						<br />
+						–&nbsp; I enjoy teaching and have taught{' '}
+						<Link href="https://sp21.datastructur.es/">
+							<a>data structures</a>
+						</Link>{' '}
+						for 2 years at Berkeley
+					</h2>
+				</div>
+			</figure>
+		</div>
+	);
+}
+{
+	/* <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+  <img class="w-32 h-32 md:w-48 md:rounded-none rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512">
+  <div class="pt-6 md:p-8 text-center space-y-4">
+    <blockquote>
+      <p class="text-lg font-semibold">
+        “Tailwind CSS is the only framework that I've seen scale
+        on large teams. It’s easy to customize, adapts to any design,
+        and the build size is tiny.”
+      </p>
+    </blockquote>
+    <figcaption class="font-medium">
+      <div class="text-cyan-600">
+        Sarah Dayan
+      </div>
+      <div class="text-gray-500">
+        Staff Engineer, Algolia
+      </div>
+    </figcaption>
+  </div>
+</figure> */
 }
