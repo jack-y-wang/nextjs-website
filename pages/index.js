@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
+
+import TeachingCard from '../components/TeachingCard';
 
 export default function Home() {
 	return (
@@ -18,7 +18,7 @@ export default function Home() {
 					width="512"
 					height="512"
 				/>
-				<div class="md:text-left">
+				<div>
 					<h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
 						I'm a <b>software engineer at Amazon</b>. I recently graduated from <b>UC Berkeley</b>, where I
 						studied electrical engineering and <b>computer science</b>.
@@ -41,28 +41,27 @@ export default function Home() {
 					</h2>
 				</div>
 			</figure>
+
+			<h3 className="font-bold text-2xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">Teaching</h3>
+			<div class="grid grid-cols-2 auto-cols-max gap-3">
+				<TeachingCard
+					title="CS61B: Data Structures TA"
+					description="Resources and notes I made for students while a TA (uGSI)"
+					href=""
+					icon="cs61b"
+				/>
+				<TeachingCard
+					title="Intro CS Study Guides"
+					description="Study guides to help students learn computer science topics and prepare for exams
+          that I made while in CSM"
+					href=""
+					icon="cs61b"
+				/>
+				<br />
+			</div>
+			<h3 className="font-bold text-2xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
+				Experience
+			</h3>
 		</div>
 	);
-}
-{
-	/* <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
-  <img class="w-32 h-32 md:w-48 md:rounded-none rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512">
-  <div class="pt-6 md:p-8 text-center space-y-4">
-    <blockquote>
-      <p class="text-lg font-semibold">
-        “Tailwind CSS is the only framework that I've seen scale
-        on large teams. It’s easy to customize, adapts to any design,
-        and the build size is tiny.”
-      </p>
-    </blockquote>
-    <figcaption class="font-medium">
-      <div class="text-cyan-600">
-        Sarah Dayan
-      </div>
-      <div class="text-gray-500">
-        Staff Engineer, Algolia
-      </div>
-    </figcaption>
-  </div>
-</figure> */
 }
