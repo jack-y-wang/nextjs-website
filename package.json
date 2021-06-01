@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
+    "mailgo": "^0.12.1",
     "next": "latest",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

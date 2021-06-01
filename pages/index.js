@@ -1,16 +1,35 @@
+import { useEffect } from 'react';
+
 import Head from 'next/head';
 import Link from 'next/link';
+
+import mailgo from 'mailgo';
 
 import TeachingCard from '../components/TeachingCard';
 import WorkCard from '../components/WorkCard';
 import SpotifyNowPlay from '../components/SpotifyNowPlay';
 
+const mailgoConfig = {
+	dark: false
+};
+
+const meta = {
+	title: 'Jack Wang – software engineer, human being',
+	image: '/favicon.png',
+	type: 'website'
+};
+
+const ExternalLink = ({ href, children }) => (
+	<a className="text-gray-500 hover:text-gray-600 transition" target="_blank" rel="noopener noreferrer" href={href}>
+		{children}
+	</a>
+);
+
 export default function Home() {
-	const meta = {
-		title: 'Jack Wang – software engineer, human being',
-		image: '/favicon.png',
-		type: 'website'
-	};
+	useEffect(() => {
+		mailgo(mailgoConfig);
+	}, []);
+
 	return (
 		<div className="pt-10 flex flex-col justify-center items-start max-w-2xl mx-auto px-6 mb-16">
 			<Head>
@@ -48,9 +67,10 @@ export default function Home() {
 					</h2>
 					<h2 className="prose text-gray-600 dark:text-gray-400 mb-10">
 						Feel free to message me at{' '}
-						<Link href="https://jack.y.wang@berkeley.edu">
-							<a>jack.y.wang@berkeley.edu</a>
-						</Link>! ✉️
+						<a href="mailto:jack.y.wang@berkeley.edu" target="_blank" el="noopener noreferrer">
+							jack.y.wang@berkeley.edu
+						</a>{' '}
+						✉️
 					</h2>
 				</div>
 			</figure>
@@ -94,7 +114,7 @@ export default function Home() {
 					title="Intro CS Study Guides"
 					description="Study guides to help students learn computer science topics and prepare for exams
           that I made while in CSM."
-					href=""
+					href="https://drive.google.com/drive/folders/1y9yT9svGn0La_WRy_nqi1XRQsJ7Nteds?usp=sharing"
 					icon="cs61b"
 				/>
 				<br />
@@ -104,6 +124,14 @@ export default function Home() {
 				<hr className="w-full border-1 border-gray-300 dark:border-gray-800 mb-4" />
 				<SpotifyNowPlay />
 				<hr />
+				<div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
+					<div className="flex flex-col space-y-4">
+						<ExternalLink href="https://www.linkedin.com/in/jack-y-wang/">LinkedIn</ExternalLink>
+					</div>
+					<div className="flex flex-col space-y-4">
+						<ExternalLink href="https://github.com/jack-y-wang">Github</ExternalLink>
+					</div>
+				</div>
 			</footer>
 		</div>
 	);
