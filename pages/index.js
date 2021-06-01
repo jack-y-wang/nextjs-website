@@ -38,7 +38,8 @@ export default function Home() {
 						–&nbsp; I sometimes make {' '}
 						<Link href="https://www.youtube.com/channel/UCja7ZkxohSdeqgilaIw36nw">
 							<a>videos</a>
-						</Link>
+						</Link>{' '}
+						of friends and trips
 						<br />
 						–&nbsp; I enjoy teaching, especially{' '}
 						<Link href="https://sp21.datastructur.es/">
@@ -47,7 +48,7 @@ export default function Home() {
 					</h2>
 					<h2 className="prose text-gray-600 dark:text-gray-400 mb-10">
 						Feel free to message me at{' '}
-						<Link href="jack.y.wang@berkeley.edu">
+						<Link href="https://jack.y.wang@berkeley.edu">
 							<a>jack.y.wang@berkeley.edu</a>
 						</Link>! ✉️
 					</h2>
@@ -86,7 +87,7 @@ export default function Home() {
 				<TeachingCard
 					title="CS61B: Data Structures"
 					description="Resources and notes I made for students when I TA'd (uGSI)."
-					href=""
+					href="https://drive.google.com/drive/folders/1A9XFTSE9B5LT6tFrANozwiW0vbxwC2SV?usp=sharing"
 					icon="cs61b"
 				/>
 				<TeachingCard
