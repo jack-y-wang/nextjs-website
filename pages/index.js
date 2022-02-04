@@ -6,6 +6,7 @@ import Link from 'next/link';
 import mailgo from 'mailgo';
 
 import TeachingCard from '../components/TeachingCard';
+import ProjectCard from '../components/ProjectCard';
 import WorkCard from '../components/WorkCard';
 import SpotifyNowPlay from '../components/SpotifyNowPlay';
 
@@ -14,7 +15,7 @@ const mailgoConfig = {
 };
 
 const meta = {
-	title: 'Jack Wang – software engineer, human being',
+	title: 'Jack Wang – software engineer, spikeballer, human being',
 	image: '/favicon.png',
 	type: 'website'
 };
@@ -46,8 +47,9 @@ export default function Home() {
 				/>
 				<div>
 					<h2 className="prose text-gray-600 dark:text-gray-400 mb-6">
-						I'm a <b>software engineer at Amazon</b>. I recently graduated from <b>UC Berkeley</b>, where I
-						studied electrical engineering and <b>computer science</b>.
+						I'm a <b>software engineer at Amazon AWS</b>, working on Elastic Block Storage (EBS). I
+						graduated from <b>UC Berkeley</b>, where I studied Electrical Engineering and{' '}
+						<b>Computer Science</b>.
 						<br />
 						<br />
 						Some other things about me:
@@ -79,6 +81,14 @@ export default function Home() {
 				Experiences
 			</h3>
 			<WorkCard
+				title="Amazon AWS Software Engineer"
+				description=""
+				time="Aug 2021 - now"
+				summary="Currently working on backend infrastructure automating processeses that
+				provision EBS Servers and maintain the health of them."
+				icon="/amazon-logo.jpg"
+			/>
+			<WorkCard
 				title="Amazon Software Development Engineer Intern"
 				description=""
 				time="May - Aug 2020"
@@ -99,10 +109,42 @@ export default function Home() {
 				summary="Designed testing components for validation and testing of electric motors."
 				icon="/seres.png"
 			/>
+
+			<br />
+			<h3 className="font-bold text-2xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">Projects</h3>
+			<ProjectCard
+				title="Mock Slack Backend"
+				description="A backend application modeled after Slack using Flask, and SQLAlchemy. 
+							This application implements Workspaces, Users with Authentication, 
+							Channels, Threads, Direct Messaging, and Images"
+				icon="/slack-icon.png"
+				github="https://github.com/jack-y-wang/slack-backend"
+			/>
+			<ProjectCard
+				title="Maze Search Algorithm Visualizer"
+				description="A web app to help students visualize applications of
+							search algorithms by using them to find a path through
+							randomly genderated mazes and tree diagrams"
+				site="https://maze-traversal.herokuapp.com/"
+				github="https://github.com/jack-y-wang/mazeTraversals"
+				icon="/maze.png"
+			/>
+			<ProjectCard
+				title="PomoTasks"
+				description="A Pomodoro to-do list web app built with react 
+								to help improve time management skills"
+				site="https://pomotasks.netlify.app/"
+				github="https://github.com/jack-y-wang/PomoTasks"
+				icon="/yes-check-circle.png"
+			/>
 			<br />
 			<h3 className="font-bold text-2xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">
 				Teaching Resources
 			</h3>
+			<h2 className="prose text-gray-600 dark:text-gray-400 mb-6">
+				Below are some teaching resources I made while I as a teaching assistant / undergraduate student
+				instructor at UC Berkeley to help students conceptually understand concepts:
+			</h2>
 			<div class="grid grid-cols-2 auto-cols-max gap-3">
 				<TeachingCard
 					title="CS61B: Data Structures"
