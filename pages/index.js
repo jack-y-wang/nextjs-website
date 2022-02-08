@@ -84,7 +84,7 @@ export default function Home() {
 				title="Amazon AWS Software Engineer"
 				description=""
 				time="Aug 2021 - now"
-				summary="Currently working on backend infrastructure automating processeses that
+				summary="Currently working on backend infrastructure automating processes that
 				provision EBS Servers and maintain the health of them."
 				icon="/amazon-logo.jpg"
 			/>
