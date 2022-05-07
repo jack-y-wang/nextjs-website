@@ -56,6 +56,11 @@ export default function Home() {
 						<br />
 						–&nbsp; I like being outdoors: National Parks, spikeball, hammocking
 						<br />
+						–&nbsp; I enjoy spending time and playing with my{' '}
+						<a href="/assets/denver.JPG" target="_blank" el="noopener noreferrer">
+							dog!
+						</a>
+						<br />
 						–&nbsp; I sometimes make {' '}
 						<Link href="https://www.youtube.com/channel/UCja7ZkxohSdeqgilaIw36nw">
 							<a>videos</a>
@@ -68,7 +73,11 @@ export default function Home() {
 						</Link>!
 					</h2>
 					<h2 className="prose text-gray-600 dark:text-gray-400 mb-10">
-						Feel free to message me at{' '}
+						Here's my{' '}
+						<a href="/assets/JackWangResume.pdf" target="_blank" el="noopener noreferrer">
+							resume
+						</a>{' '}
+						and you can reach me at{' '}
 						<a href="mailto:jack.y.wang@berkeley.edu" target="_blank" el="noopener noreferrer">
 							jack.y.wang@berkeley.edu
 						</a>{' '}
@@ -83,29 +92,39 @@ export default function Home() {
 			<WorkCard
 				title="Amazon AWS Software Engineer"
 				description=""
-				time="Aug 2021 - now"
-				summary="Currently working on backend infrastructure automating processes that
-				provision EBS Servers and maintain the health of them."
+				time="Aug '21 - Current"
+				summary="Working on backend infrastructure to maintain online volume capacity for customers
+				by automating processes that provision and monitor the health of EBS servers."
 				icon="/amazon-logo.jpg"
 			/>
 			<WorkCard
-				title="Amazon Software Development Engineer Intern"
+				title="Amazon AWS Software Engineer Intern"
 				description=""
-				time="May - Aug 2020"
-				summary="Built a tool that automates the rebuilding of AWS EBS servers to decrease offline capacity."
+				time="May - Aug '20"
+				summary="Increased online availability of servers to customers by shipping a feature that allows configuration to repeat
+				steps in the workflow to build software onto a server that might fail due to transient issues."
 				icon="/amazon-logo.jpg"
+			/>
+			<WorkCard
+				title="UC Berkeley Data Structures Student Instructor"
+				description=""
+				time="Jan '20 - Aug '21"
+				summary="Taught weekly 1-hour discusion spections specifically for students in the CS scholrs program, 
+				who come from under-resourced and low-opportunity communities, held office hours, and graded coursework 
+				and exams"
+				icon="/61b-logo.png"
 			/>
 			<WorkCard
 				title="UNCF Silicon Valley CS Academy Instructor"
 				description=""
-				time="May - Aug 2019"
+				time="May - Aug '19"
 				summary="Mentored 30 students from historically black colleges and universites (HBCUs) data structures and algorithms."
 				icon="/uncf.png"
 			/>
 			<WorkCard
 				title="Seres Motors Engineering Intern"
 				description=""
-				time="May - Aug 2018"
+				time="May - Aug '18"
 				summary="Designed testing components for validation and testing of electric motors."
 				icon="/seres.png"
 			/>
@@ -113,8 +132,8 @@ export default function Home() {
 			<br />
 			<h3 className="font-bold text-2xl md:text-3xl tracking-tight mb-4 text-black dark:text-white">Projects</h3>
 			<ProjectCard
-				title="Mock Slack Backend"
-				description="A backend application modeled after Slack using Flask, and SQLAlchemy. 
+				title="Slack Backend"
+				description="A backend application modeled after Slack using Flask, SQLAlchemy, and AWS S3. 
 							This application implements Workspaces, Users with Authentication, 
 							Channels, Threads, Direct Messaging, and Images"
 				icon="/slack-icon.png"
@@ -122,7 +141,7 @@ export default function Home() {
 			/>
 			<ProjectCard
 				title="Maze Search Algorithm Visualizer"
-				description="A web app to help students visualize applications of
+				description="A web app to help students in a United Negro College Fund (UNCF) summer program visualize applications of
 							search algorithms by using them to find a path through
 							randomly genderated mazes and tree diagrams"
 				site="https://maze-traversal.herokuapp.com/"
@@ -131,8 +150,9 @@ export default function Home() {
 			/>
 			<ProjectCard
 				title="PomoTasks"
-				description="A Pomodoro to-do list web app built with react 
-								to help improve time management skills"
+				description="A Pomodoro to-do list web app built with React, Google Firebase, and Google Authentication
+							to help improve time managment skills with options to estimate the # of pomodoros
+							needed to finish a task as well to record notes on a particular task."
 				site="https://pomotasks.netlify.app/"
 				github="https://github.com/jack-y-wang/PomoTasks"
 				icon="/yes-check-circle.png"
