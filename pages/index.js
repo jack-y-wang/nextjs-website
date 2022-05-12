@@ -108,7 +108,7 @@ export default function Home() {
 			<WorkCard
 				title="UC Berkeley Data Structures Student Instructor"
 				description=""
-				time="Jan '20 - Aug '21"
+				time="Aug '19 - Aug '21"
 				summary="Taught weekly 1-hour discusion spections specifically for students in the CS scholrs program, 
 				who come from under-resourced and low-opportunity communities, held office hours, and graded coursework 
 				and exams"
