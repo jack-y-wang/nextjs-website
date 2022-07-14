@@ -15,7 +15,7 @@ const mailgoConfig = {
 };
 
 const meta = {
-	title: 'Jack Wang – software engineer, spikeballer, human being',
+	title: 'Jack Wang – software engineer, dog dad, human being',
 	image: '/favicon.png',
 	type: 'website'
 };
@@ -47,9 +47,13 @@ export default function Home() {
 				/>
 				<div>
 					<h2 className="prose text-gray-600 dark:text-gray-400 mb-6">
-						I'm a <b>software engineer at Amazon AWS</b>, working on Elastic Block Storage (EBS). I
-						graduated from <b>UC Berkeley</b>, where I studied Electrical Engineering and{' '}
-						<b>Computer Science</b>.
+						I'm a <a href="https://headway.co/">software engineer at Headway</a> working on building
+						products to improve access and cost to therapists!
+						<br />
+						<br />
+						Previously, I worked at <b>AWS</b> building provisioning services for Elastic Block Storage
+						(EBS), and graduated from UC Berkeley (BS in Electrical Engineering and <b>Computer Science</b>{' '}
+						'21').
 						<br />
 						<br />
 						Some other things about me:
@@ -90,15 +94,22 @@ export default function Home() {
 				Experiences
 			</h3>
 			<WorkCard
-				title="Amazon AWS Software Engineer"
+				title="Headway, Software Engineer"
 				description=""
-				time="Aug '21 - Current"
+				time="Aug '22 - Current"
+				summary="Building products to make mental healthcare more accessible!"
+				icon="/headway.jpeg"
+			/>
+			<WorkCard
+				title="Amazon AWS, Software Engineer"
+				description=""
+				time="Aug '21 - Aug '22"
 				summary="Working on backend infrastructure to maintain online volume capacity for customers
 				by automating processes that provision and monitor the health of EBS servers."
 				icon="/amazon-logo.jpg"
 			/>
 			<WorkCard
-				title="Amazon AWS Software Engineer Intern"
+				title="Amazon AWS, Software Engineer Intern"
 				description=""
 				time="May - Aug '20"
 				summary="Increased online availability of servers to customers by shipping a feature that allows configuration to repeat
@@ -106,7 +117,7 @@ export default function Home() {
 				icon="/amazon-logo.jpg"
 			/>
 			<WorkCard
-				title="UC Berkeley Data Structures Student Instructor"
+				title="UC Berkeley Data Structures, Student Instructor"
 				description=""
 				time="Aug '19 - Aug '21"
 				summary="Taught weekly 1-hour discusion spections specifically for students in the CS scholrs program, 
@@ -115,14 +126,14 @@ export default function Home() {
 				icon="/61b-logo.png"
 			/>
 			<WorkCard
-				title="UNCF Silicon Valley CS Academy Instructor"
+				title="UNCF Silicon Valley, CS Academy Instructor"
 				description=""
 				time="May - Aug '19"
 				summary="Mentored 30 students from historically black colleges and universites (HBCUs) data structures and algorithms."
 				icon="/uncf.png"
 			/>
 			<WorkCard
-				title="Seres Motors Engineering Intern"
+				title="Seres Motors, Engineering Intern"
 				description=""
 				time="May - Aug '18"
 				summary="Designed testing components for validation and testing of electric motors."
