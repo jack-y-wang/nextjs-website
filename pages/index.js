@@ -32,7 +32,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<div className="pt-10 flex flex-col justify-center items-start max-w-2xl mx-auto px-6 mb-16">
+		<div className="pt-10 flex flex-col justify-center items-start max-w-6xl mx-auto px-6 mb-16">
 			<Head>
 				<title>{meta.title}</title>
 			</Head>
